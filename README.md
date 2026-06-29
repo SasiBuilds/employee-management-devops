@@ -50,6 +50,47 @@ Monitoring stack installed using Helm:
 * Node Exporter
 * Grafana
 
+## Repository Structure
+
+employee-management-system/
+├── .github/workflows/
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── terraform/
+│   ├── main.tf
+│   └── outputs.tf
+├── screenshots/
+├── Dockerfile
+├── README.md
+├── index.html
+├── style.css
+└── script.js
+
+## Deployment Steps
+
+### Build Docker Image
+
+docker build -t employee-management:v1 .
+
+### Deploy to Kubernetes
+
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+
+### Verify Deployment
+
+kubectl get pods
+kubectl get svc
+
+### Install Prometheus
+
+helm install prometheus prometheus-community/prometheus
+
+### Install Grafana
+
+helm install grafana grafana/grafana
+
 ## Screenshots
 
 ### Kubernetes Pods
@@ -72,6 +113,7 @@ Monitoring stack installed using Helm:
 
 ![Prometheus](screenshots/prometheus-dashboard.png)
 
+ 
 ## Author
 
 Daggubati Sashank
