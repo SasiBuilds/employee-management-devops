@@ -54,12 +54,15 @@ Monitoring stack installed using Helm:
 
 ### Kubernetes Pods
 
-<img width="1920" height="1020" alt="kubectl-pods - Copy" src="https://github.com/user-attachments/assets/71f272dc-18e0-4eea-b7f1-780b83b0b0e2" />
+<img width="1920" height="300" alt="kubectl-pods - Copy(1)" src="https://github.com/user-attachments/assets/90aa1092-9538-4959-93f7-01d96aa38341" />
+
+
 
 
 ### Kubernetes Services
 
-![Services](screenshots/kubectl-service.png)
+<img width="1920" height="345" alt="kubectl-service(1)" src="https://github.com/user-attachments/assets/c6c0f5a3-5a79-4efb-ba5a-45800d9af03f" />
+
 
 ### Grafana
 
