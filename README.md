@@ -74,5 +74,4 @@ Monitoring stack installed using Helm:
 
 ## Author
 
-Sasi
-Aspiring DevOps Engineer
+Daggubati Sashank
