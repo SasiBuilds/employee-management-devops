@@ -69,18 +69,28 @@ employee-management-system/
 
 ## Deployment Steps
 
+### Clone Repository
+
+git clone https://github.com/SasiBuilds/employee-management-devops.git
+
 ### Build Docker Image
 
 docker build -t employee-management:v1 .
 
+### Run Docker Container
+
+docker run -d -p 8080:80 employee-management:v1
+
 ### Deploy to Kubernetes
 
 kubectl apply -f k8s/deployment.yaml
+
 kubectl apply -f k8s/service.yaml
 
 ### Verify Deployment
 
 kubectl get pods
+
 kubectl get svc
 
 ### Install Prometheus
@@ -90,6 +100,7 @@ helm install prometheus prometheus-community/prometheus
 ### Install Grafana
 
 helm install grafana grafana/grafana
+
 
 ## Screenshots
 
